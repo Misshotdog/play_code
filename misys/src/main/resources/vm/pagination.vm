@@ -1,0 +1,88 @@
+<script>
+    $(function () {
+        $(".j-pageclick:visible").on("click",".pagebtn",function(){
+        	var pageSize = $(this).parents().find("#pageSize").val();
+        	var type = $(this).attr("type");
+        	var page_n;
+        	switch(type){
+        		case "page_home":
+        			page_n = 1;
+        			break;
+        		case "page_prev":
+        			var currentPage = "${currentPage}";
+        			page_n = parseInt(currentPage)-1;
+        			break;
+        		case "page_next":
+        			var currentPage = "${currentPage}";
+        			page_n = parseInt(currentPage)+1;
+        			break;
+        		case "page_end":
+        			page_n = "${totalPage}";
+        			break;
+        		case "page_num":
+        			var $number = $(this).attr("id");
+        			page_n = $number;
+        			break;
+        		}
+        	var $form = $("form:visible");
+
+			//【特殊处理】$("form:visible")默认获取到页面中第一个form，计划管理页面两个form表单，加判断，通过id获取from
+			if ($form.attr('id') == 'add_new_scheduled_task_form'){
+				$form = $("#search_scheduled_task_form");
+			}
+        	pageMethod(page_n,$form,pageSize);
+        });
+        
+   	 	$(".j-pageclick:visible").on("change",".page_size_num",function(){
+   	 		var $form = $("form:visible");
+   	 		var pageSize = $(this).val();
+   	 		var pageNo = ${currentPage};
+            pageMethod(pageNo,$form,pageSize);
+   	 	});
+   	 	
+   	 	$(".j-pageclick:visible").find("#pageSize").val(${pageSize});
+   	 	
+   	 	$(".j-pageclick:visible").find("#uniform-pageSize").find("span").text(${pageSize});
+    }) 
+</script>
+
+<div class="m-page m-page-sr j-pageclick">
+	<div class="m-pagenum">
+	         每页显示<select id="pageSize" class="uniformselect page_size_num">
+	         	<option value="10">10</option>
+	         	<option value="20">20</option> 
+	         	<option value="50">50</option>
+	         	<option value="100">100</option>
+	         </select>条数据
+	</div>
+    #if($currentPage >= 1)
+    	#if($totalPage < 1)
+    		<i class="first">共${totalPage}页/${totalCount}条　页次：0/${totalPage}页</i>
+    	#else
+       	 	<i class="first">共${totalPage}页/${totalCount}条　页次：${currentPage}/${totalPage}页</i>
+		#end
+		
+        #if($currentPage >= 2)
+            #set($prePage = $currentPage - 1 )
+            <a class="last pagebtn" type="page_home" href="javascript:void(0);">首页</a>
+            <a class="last pagebtn" type="page_prev"  href="javascript:void(0);"><span class="pagearr">&lt;</span>上一页</a>
+        #end
+
+        #if(${totalPage} > 1)
+            #foreach($number in [$pageStart..$pageEnd])
+                #if($number eq $currentPage)
+                    <a class="z-crt" href="javascript:void(0);">$number</a>
+                #else
+                    <a class="pagebtn" type="page_num" id="$number" href="javascript:void(0);">$number</a>
+                #end
+            #end
+        #end
+
+        #if($currentPage < $totalPage)
+            #set($nextPage = $currentPage + 1 )
+            <a class="last pagebtn" type="page_next" href="javascript:void(0);">下一页<span class="pagearr">&gt;</span></a>
+            <a class="last pagebtn" type="page_end" href="javascript:void(0);">尾页</a>
+        #end
+	
+    #end
+</div>
