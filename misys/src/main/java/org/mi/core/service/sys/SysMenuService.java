@@ -13,9 +13,8 @@ import com.feinno.framework.common.service.EntityService;
 /**
  * 系统菜单表 Service
  *
- * Date: 2015-05-12 15:39:06
  *
- * @author Code Generator
+ * @author miss_hotdog
  *
  */
 public interface SysMenuService extends EntityService<SysMenu> {
@@ -36,28 +35,5 @@ public interface SysMenuService extends EntityService<SysMenu> {
      * @return
      */
     List<MenuView> queryAuthorisedMenus(Long roleId,Long classify);
-
-    /**
-     * 通过ID删除， 并删除子菜单
-     * @param id
-     * @return
-     */
-    public int deleteTree(long id);
-
-    /**
-     * 批量修改排序值
-     * @param ids
-     * @param sortNums
-     * @param parentIds
-     */
-    public void sort(Long[] ids, Long[] sortNums, Long[] parentIds);
-    
-    public PageInfo<SysMenu> getInfoPage(PageInfo<SysMenu> pageInfo,
-			Map<String, Object> conditions, Map<String, Boolean> orderBy);
-    
-    
-    public List<SysMenu> getMenuList();
-    
-    public int getMenuCount(Long parentId);
 
 }

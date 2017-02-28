@@ -15,5 +15,4 @@ import com.feinno.framework.common.dao.jpa.EntityJpaDao;
 public interface SysUserRoleDao extends EntityJpaDao<SysUserRole,Long>{
 
 	
-	public void saveUserRole(SysUserRole userRole);
 }

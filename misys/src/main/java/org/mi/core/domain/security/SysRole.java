@@ -29,9 +29,8 @@ import com.feinno.framework.common.domain.AbstractEntity;
 /**
  * 系统角色表 Entity
  *
- * Date: 2015-05-12 17:30:34
  *
- * @author Acooly Code Generator
+ * @author miss_hotdog
  */
 @Entity
 @Table(name = "sys_role")

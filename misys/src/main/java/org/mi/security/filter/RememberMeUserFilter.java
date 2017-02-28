@@ -14,9 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by Administrator on 2015/5/26.
+ * Created by Administrator miss_hotdog
  *
- * 记住我登陆的回调过滤器
  *
  */
 public class RememberMeUserFilter extends UserFilter {

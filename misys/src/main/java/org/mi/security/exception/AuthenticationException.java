@@ -1,7 +1,7 @@
 package org.mi.security.exception;
 
 /**
- * 
+ * miss_hotdog
  */
 public class AuthenticationException extends org.apache.shiro.authc.AuthenticationException {
 

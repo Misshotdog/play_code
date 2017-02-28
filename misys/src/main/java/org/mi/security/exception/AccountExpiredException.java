@@ -1,7 +1,8 @@
 package org.mi.security.exception;
 
 /**
- * 
+ * 账号过期异常
+ * miss_hotdog
  */
 public class AccountExpiredException extends AuthenticationException {
 

@@ -3,7 +3,7 @@ package org.mi.security.support;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created by Administrator on 2015/12/5 0005.
+ * Created by miss_hotdog
  */
 public class Base64 {
     public static String base64Decode(String psw) throws Exception{

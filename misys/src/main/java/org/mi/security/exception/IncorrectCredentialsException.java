@@ -1,7 +1,7 @@
 package org.mi.security.exception;
 
 /**
- * Created by Administrator on
+ * Created by miss_hotdog
  *
  * 
  */

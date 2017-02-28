@@ -43,11 +43,6 @@ public class SysMenuServiceImpl extends EntityServiceImpl<SysMenu, SysMenuDao> i
         securityCache.clearAllMenu();
     }
 
-    @Override
-    @Transactional
-    public int updateStatusById(Long id, Integer status){
-        return super.getEntityDao().updateStatusById(id, status);
-    }
 
 
     /**
@@ -113,36 +108,5 @@ public class SysMenuServiceImpl extends EntityServiceImpl<SysMenu, SysMenuDao> i
         }
         return list;
     }
-
-    @Override
-    @Transactional
-    public int deleteTree(long id) {
-        int count = super.getEntityDao().deleteTree(id);
-        securityCache.clearAllMenu();
-        return count;
-    }
-
-    @Override
-    @Transactional
-    public void sort(Long[] ids, Long[] sortNums, Long[] parentIds) {
-        for(int j=0; j<ids.length; j++){
-            super.getEntityDao().sort(ids[j], sortNums[j], parentIds[j]);
-        }
-        securityCache.clearAllMenu();
-    }
-
-	public PageInfo<SysMenu> getInfoPage(PageInfo<SysMenu> pageInfo, Map<String, Object> conditions,
-			Map<String, Boolean> orderBy) {
-		return sysMenuDaoCustom.getInfoPage(pageInfo, conditions, orderBy);
-	}
-
-	public List<SysMenu> getMenuList() {
-		return sysMenuDaoCustom.getMenuList();
-	}
-
-	public int getMenuCount(Long parentId) {
-		return this.getEntityDao().getMenuCount(parentId);
-	}
-
 
 }

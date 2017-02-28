@@ -48,11 +48,11 @@ public class SecurityIndexController {
 		return "/module/security/index";
 	}
 	
-	//退出清除
+	/**
+	 * 
+	 */
 	@RequestMapping("logout")
 	public String logout(HttpServletRequest request, HttpServletResponse response) {
-		// 使用权限管理工具进行用户的退出，注销登录
-		// 会销毁，在SessionListener监听session销毁，清理权限缓存
 		SecurityUtils.getSubject().logout();
 		authRealm.clearAllCachedAuthorizationInfo();
 		return "redirect:/login.html";

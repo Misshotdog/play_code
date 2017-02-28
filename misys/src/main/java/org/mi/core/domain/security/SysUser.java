@@ -23,9 +23,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 /**
  * 系统用户表 Entity
  *
- * Date: 2015-05-11 16:11:20
  *
- * @author Acooly Code Generator
+ * @author miss_hotdog
  */
 @Entity
 @Table(name = "sys_user")

@@ -1,7 +1,8 @@
 package org.mi.security.exception;
 
 /**
- * 
+ * 验证码异常
+ * miss_hotdog
  */
 
 public class InvaildCaptchaException extends AuthenticationException {

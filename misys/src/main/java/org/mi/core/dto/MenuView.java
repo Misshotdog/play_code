@@ -5,6 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * 
+ * 菜单dto对象
+ * @author  miss_hotdog
+ *
+ */
 public class MenuView {
 	private long id;
 	private String text;

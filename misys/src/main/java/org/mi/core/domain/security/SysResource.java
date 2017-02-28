@@ -24,9 +24,7 @@ import com.feinno.framework.common.domain.AbstractEntity;
 /**
  * 系统资源表 Entity
  *
- * Date: 2015-06-01 13:59:43
- *
- * @author Acooly Code Generator
+ * @author miss_hotdog
  */
 @Entity
 @Table(name = "sys_resource")

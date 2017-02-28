@@ -11,9 +11,8 @@ import com.feinno.framework.common.service.EntityService;
 /**
  * 系统用户表 Service
  *
- * Date: 2015-05-11 16:11:20
  *
- * @author Code Generator
+ * @author miss_hotdog
  *
  */
 public interface SysUserService extends EntityService<SysUser> {

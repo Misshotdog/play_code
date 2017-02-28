@@ -9,7 +9,7 @@ import org.mi.core.domain.security.SysRole;
 import org.mi.core.domain.security.SysUser;
 
 /**
- * Time: 下午7:20
+ * 
  */
 
 public class SessionUser implements HttpSessionBindingListener{

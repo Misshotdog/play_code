@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by Administrator on 2015/5/20.
+ * Created by miss_hotdog
  */
 public class UrlPermissionResolver implements PermissionResolver {
 

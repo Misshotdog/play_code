@@ -3,14 +3,14 @@ package org.mi.security.support;
 import java.util.List;
 
 /**
- * Created by Administrator on 2
+ * Created by miss_hotdog
  *
  * 用户接口
  */
 public interface SubjectService {
 
     /**
-     * 返回用户密码和加密盐值信息，如没有盐值，将盐值赋空即�?
+     * 返回用户密码和加密盐值信息，如没有盐值，将盐值赋空即可
      * @param userName 用户
      * @return SubjectInfo 用户主体对象
      */

@@ -20,6 +20,4 @@ public interface SysMenuDaoCustom {
 	public PageInfo<SysMenu> getInfoPage(PageInfo<SysMenu> pageInfo,
 			Map<String, Object> conditions, Map<String, Boolean> orderBy);
 	
-	
-	public List<SysMenu>  getMenuList();
 }

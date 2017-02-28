@@ -58,13 +58,6 @@ public class SysUserServiceImpl extends EntityServiceImpl<SysUser, SysUserDao> i
 	}
 
 
-	public boolean checkUsername(String username) {
-		if(super.getEntityDao().findByUsername(username) != null){
-			return true;
-		}else{
-			return false;
-		}
-	}
 
 	public SubjectInfo getSubject(String userName) {
 		SubjectInfo subjectInfo = new SubjectInfo();
@@ -73,30 +66,17 @@ public class SysUserServiceImpl extends EntityServiceImpl<SysUser, SysUserDao> i
 		if (sysUser == null) {
 			return null;
 		} else {
-//			log.setIpAddress(ipAddress);
-//			log.setLogonId(UUID.randomUUID().toString());
-//			log.setLoginName(sysUser.getUserName());
-//			log.setUserName(sysUser.getTruename());
-//			log.setLogonTime(new Date());
-//			log.setLogonFlag("1");
 			subjectInfo.setPassword(sysUser.getPassword());
 			subjectInfo.setPwdSalt(sysUser.getSalt());
 			Date dt = new Date();
 			if (sysUser.getStatus() == 0) {
-				//log.setLogfailedReason("账号输入错误");
-				//log.setLogonFlag("0");
 				subjectInfo.setResult(1);
 			} else if (sysUser.getStatus() == 2) {
-				//log.setLogfailedReason("账号被锁定");
-				//log.setLogonFlag("0");
 				subjectInfo.setResult(2);
 			} else if (sysUser.getExpiredDate() != null && sysUser.getExpiredDate().getTime() < dt.getTime()){
-				//log.setLogonFlag("0");
-				//log.setLogfailedReason("账号已过期");
 				subjectInfo.setResult(3);
 			}
 		}
-		//sysLogonlogDao.save(log);
 		return subjectInfo;
 	}
 
@@ -121,9 +101,6 @@ public class SysUserServiceImpl extends EntityServiceImpl<SysUser, SysUserDao> i
     }
 
 
-	public List<SysUser> findByRole(Long roleId) {
-		return null;
-	}
 
 	public PageInfo<SysUser> getInfoPage(PageInfo<SysUser> pageInfo, Object[] conditions,
 			Map<String, Boolean> orderBy) {

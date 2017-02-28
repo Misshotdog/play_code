@@ -1,8 +1,9 @@
 package org.mi.security.exception;
 
 /**
- * Created by Administrator on 
- *
+ * 
+ * 未知账号异常
+ * Created by miss_hotdog
  * 
  */
 public class UnknownAccountException extends AuthenticationException {

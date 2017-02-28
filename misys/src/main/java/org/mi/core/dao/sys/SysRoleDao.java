@@ -16,11 +16,4 @@ import com.feinno.framework.common.dao.jpa.EntityJpaDao;
  */
 public interface SysRoleDao extends EntityJpaDao<SysRole, Long> {
 
-
-	@Query("from SysRole where roleName=?1 and id<>?2")
-	public SysRole searchByName(String roleName,Long id);
-	
-	@Modifying
-	@Query("delete SysRole where id=?1")
-	public int deleteRole(Long id);
 }

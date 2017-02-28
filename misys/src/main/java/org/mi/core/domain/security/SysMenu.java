@@ -16,9 +16,8 @@ import java.util.Set;
 /**
  * 系统菜单表 Entity
  *
- * Date: 2015-05-28 09:55:09
  *
- * @author Acooly Code Generator
+ * @author miss_hotdog
  */
 @Entity
 @Table(name = "sys_menu")

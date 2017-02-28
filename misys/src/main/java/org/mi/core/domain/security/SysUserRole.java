@@ -18,7 +18,7 @@ import com.feinno.framework.common.domain.AbstractEntity;
  * Package Name:com.feinno.bms.core.domain.sys 
  * Date:2016年7月24日下午1:15:31 
  * Copyright (c) BeiJinghtdf 2016, All Rights Reserved. 
- * 
+ * @author miss_hotdog
 */
 @Entity
 @Table(name = "sys_user_role")

@@ -12,8 +12,8 @@ import org.mi.security.realm.AuthRealm;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by Administrato
- * 安全框架cache
+ * Created by miss_hotdog
+ * cache
  */
 @Service
 public class SecurityCache {

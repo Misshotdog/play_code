@@ -3,7 +3,8 @@ package org.mi.security.exception;
 import java.util.Date;
 
 /**
- * 
+ * 账号锁定异常
+ * miss_hotdog
  */
 public class AccountLockedException extends AuthenticationException {
 

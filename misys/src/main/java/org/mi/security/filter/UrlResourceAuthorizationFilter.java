@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 /**
- * Created by Administrator on 
+ * Created by miss_hotdog 
  */
 public class UrlResourceAuthorizationFilter extends AuthorizationFilter {
 

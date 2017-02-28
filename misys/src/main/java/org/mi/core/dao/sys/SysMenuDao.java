@@ -41,14 +41,5 @@ public interface SysMenuDao extends EntityJpaDao<SysMenu, Long> {
             + " and c.id=d.resourceId and d.status = 1 and c.status=1 and r.id=?1 and c.classify=?2  order by d.id asc, d.sortNum asc")
     List<Object> queryAuthorisedMenusByRole(Long roleId,Long classify);
 
-    @Modifying
-    @Query(value = "delete from SysMenu where id=?1 or parentId=?1")
-    int deleteTree(Long id);
-
-    @Modifying
-    @Query(value = "update SysMenu set sortNum=?2, parentId=?3 where id=?1")
-    int sort(Long id, Long sortNum, Long parentId);
-    
-    @Query(value="select count(1) from SYS_MENU where parent_id=?1",nativeQuery=true)
-    int getMenuCount(Long parentId);
+   
 }

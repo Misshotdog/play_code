@@ -7,7 +7,7 @@ public final class Constant {
      */
     public static final class Global {
 
-        /** 状�?? */
+        /** 状态*/
         public static enum State {
             Enable(1, "启用"),
             Disable(0, "禁用");

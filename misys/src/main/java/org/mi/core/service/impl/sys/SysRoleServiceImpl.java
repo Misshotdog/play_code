@@ -22,8 +22,6 @@ public class SysRoleServiceImpl extends EntityServiceImpl<SysRole, SysRoleDao> i
 
     @Autowired
     private SecurityCache securityCache;
-    @Autowired
-    private SysRoleDao sysRoleDao;
     
     @Override
     public void update(SysRole o) throws BusinessException {
@@ -32,12 +30,4 @@ public class SysRoleServiceImpl extends EntityServiceImpl<SysRole, SysRoleDao> i
         securityCache.clearMenu(o.getId());
     }
 
-	public SysRole searchByName(String roleName,Long id) {
-		return sysRoleDao.searchByName(roleName,id);
-	}
-
-	@Transactional
-	public int deleteRole(Long id) {
-		return sysRoleDao.deleteRole(id);
-	}
 }

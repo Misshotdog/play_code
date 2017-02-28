@@ -3,7 +3,7 @@ package org.mi.security.support;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2015/5/20.
+ * Created by  miss_hotdog
  *
  * 登陆主体对象
  */

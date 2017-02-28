@@ -22,7 +22,7 @@ import com.feinno.framework.common.dao.support.PageInfo;
 /**
  * com.feinno.bms.web.controller. 
  * Copyright (c) BeiJinghtdf 2016
- * Date: \
+ * 
  */
 public class CommonController {
 

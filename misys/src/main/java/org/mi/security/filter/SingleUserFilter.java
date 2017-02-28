@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 
+ * Created by miss_hotdog
  *
  */
 public class SingleUserFilter extends AccessControlFilter  {

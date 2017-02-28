@@ -8,7 +8,6 @@ import java.util.Map;
 /**
  * <p>Title: SessionFace.java</p>
  * <p>Copyright: Copyright (c) 2013</p>
- * @date 2014-3-26
  * @version 1.0
  */
 
@@ -26,7 +25,7 @@ public class SessionFace {
     }
 
     /**
-     * 获取session属�??
+     * 获取session 属性
      * @param request
      * @param key
      * @return Object
@@ -36,7 +35,7 @@ public class SessionFace {
     }
 
     /**
-     * 设置session 属�??
+     * 设置session 属性
      * @param request
      * @param key
      * @param value
@@ -46,7 +45,7 @@ public class SessionFace {
     }
     
     /**
-     * 设置session 属�??
+     * 设置session  属性
      * @param request
      * @param key
      * @param obj
@@ -58,7 +57,7 @@ public class SessionFace {
     
     
     /**
-     * 删除session属�??
+     * 删除session 属性
      * @param request
      * @param key
      */

@@ -3,7 +3,8 @@ package org.mi.security.exception;
 import java.util.Date;
 
 /**
- * 
+ * å¯†ç è¿‡æœŸå¼‚å¸¸
+ * miss_hotdog
  */
 
 public class PasswordExpiredException extends AuthenticationException {
@@ -12,11 +13,11 @@ public class PasswordExpiredException extends AuthenticationException {
 	private String expired;
 
 	public PasswordExpiredException() {
-		super("ÃÜÂëÒÑ¹ıÆÚ");
+		super("å¯†ç å·²è¿‡æœŸ");
 	}
 	
 	public PasswordExpiredException(Date lastUpdata, String expired) {
-		super("ÃÜÂëÒÑ¹ıÆÚ");
+		super("å¯†ç å·²è¿‡æœŸ");
 		this.lastUpdata = lastUpdata;
 		this.expired = expired;
 	}

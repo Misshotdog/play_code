@@ -38,11 +38,5 @@ public class SysMenuDaoImpl implements SysMenuDaoCustom{
 		return pageInfo;
 	}
 
-	public List<SysMenu> getMenuList() {
-		StringBuffer sql  = new StringBuffer();
-		sql.append("SELECT menu.*, res.TITLE as resTitle ,res.RESTYPE,res.RES_STRING,res.id as resId");
-		sql.append(" FROM SYS_MENU menu left JOIN SYS_RESOURCE res ON menu.RESOURCE_ID=res.id");
-		return pagedJdbcTemplate.queryForList(sql.toString(), SysMenu.class);
-	}
 
 }
