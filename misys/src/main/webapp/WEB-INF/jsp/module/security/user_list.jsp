@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/common/taglibs.jsp"%>
+<%@ include file="/WEB-INF/jsp/common/script.jsp"%>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -11,21 +13,7 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <LINK rel="Bookmark" href="/favicon.ico" >
 <LINK rel="Shortcut Icon" href="/favicon.ico" />
-<!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
-<script type="text/javascript" src="lib/PIE_IE678.js"></script>
-<![endif]-->
-<link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/lib/Hui-iconfont/1.0.7/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css" />
-<!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
+
 <title>管理员列表</title>
 </head>
 <body>
@@ -75,12 +63,7 @@
 </div>
 <feinno-frame:pagination/>
 
-<script type="text/javascript" src="/lib/jquery/1.9.1/jquery.min.js"></script>  
-<script type="text/javascript" src="/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="/lib/laypage/1.2/laypage.js"></script> 
-<script type="text/javascript" src="/lib/My97DatePicker/WdatePicker.js"></script> 
-<script type="text/javascript" src="/static/h-ui/js/H-ui.js"></script> 
-<script type="text/javascript" src="/static/h-ui.admin/js/H-ui.admin.js"></script> 
+
 <script type="text/javascript">
 /*
 	参数解释：

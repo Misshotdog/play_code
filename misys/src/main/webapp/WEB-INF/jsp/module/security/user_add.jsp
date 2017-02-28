@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@ include file="/WEB-INF/jsp/common/taglibs.jsp"%>
+<%@ include file="/WEB-INF/jsp/common/script.jsp"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -12,22 +13,6 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <LINK rel="Bookmark" href="/favicon.ico" >
 <LINK rel="Shortcut Icon" href="/favicon.ico" />
-<!--[if lt IE 9]>
-<script type="text/javascript" src="http://lib.h-ui.net/html5.js"></script>
-<script type="text/javascript" src="http://lib.h-ui.net/respond.min.js"></script>
-<script type="text/javascript" src="http://lib.h-ui.net/PIE_IE678.js"></script>
-<![endif]-->
-<link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/lib/Hui-iconfont/1.0.7/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css" />
-<!--[if IE 6]>
-<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
-<!--/meta 作为公共模版分离出去-->
 
 <title>添加用户</title>
 </head>
@@ -104,14 +89,9 @@
 </article>
 
 <!--_footer 作为公共模版分离出去--> 
-<script type="text/javascript" src="/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="http://lib.h-ui.net/icheck/jquery.icheck.min.js"></script> 
 <script type="text/javascript" src="http://lib.h-ui.net/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
 <script type="text/javascript" src="http://lib.h-ui.net/jquery.validation/1.14.0/validate-methods.js"></script> 
 <script type="text/javascript" src="http://lib.h-ui.net/jquery.validation/1.14.0/messages_zh.min.js"></script> 
-<script type="text/javascript" src="/static/h-ui/js/H-ui.js"></script> 
-<script type="text/javascript" src="/static/h-ui.admin/js/H-ui.admin.js"></script> 
 <!--/_footer /作为公共模版分离出去--> 
 
 <!--请在下方写此页面业务相关的脚本--> 
